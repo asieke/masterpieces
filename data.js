@@ -122,10 +122,3 @@ var data = [
     artist: "Caspar David Friedrich"
   },
 ];
-
-
-var obj = data[Math.floor(Math.random()*data.length)]
-var src = obj.id;
-document.getElementById("image").innerHTML += "<img id='picture' src='"+obj.id+".png'>"
-document.getElementById("title").innerHTML = obj.name;
-document.getElementById("artist").innerHTML = obj.artist + " (" + obj.date + ")";

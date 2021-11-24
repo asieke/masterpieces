@@ -67,4 +67,11 @@
 
 </html>
 
-<script src="index.js"></script>
+<script src="data.js"></script>
+<script>
+  var obj = data[Math.floor(Math.random()*data.length)]
+  var src = obj.id;
+  document.getElementById("image").innerHTML += "<img id='picture' src='images/"+obj.id+".png'>"
+  document.getElementById("title").innerHTML = obj.name;
+  document.getElementById("artist").innerHTML = obj.artist + " (" + obj.date + ")";
+</script>
